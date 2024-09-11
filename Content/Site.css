@@ -1,0 +1,375 @@
+﻿/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+    .nav-link:hover {
+        color: #0056b3;
+    }
+
+/* Form Control */
+.form-control {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    background-color: #007bff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+.btn-outline-secondary {
+    background-color: #fff;
+    border: 1px solid #6c757d;
+    color: #6c757d;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: #fff;
+    }
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Watch Image */
+.card-img-top {
+    max-width: 100%;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+/* Watch Listing */
+.watch-list .card {
+    text-align: center;
+    padding: 15px;
+}
+
+.watch-list .card-body {
+    padding: 15px;
+}
+
+/* Product Card Adjustments */
+.product-card {
+    width: 22%;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter-section select {
+        width: 100%;
+    }
+}
+
+/* Category Filter */
+.col-md-3 {
+    margin-bottom: 20px;
+}
+
+.col-md-9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Cart Page Specific Styling */
+.cart-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .cart-container h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #333;
+        text-align: center;
+    }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+    .cart-item img {
+        width: 100%;
+        max-width: 100px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    .cart-item h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .cart-item p {
+        font-size: 1rem;
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+    .input-group .form-control {
+        width: 60px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+        margin: 0 5px;
+    }
+
+    .input-group .btn {
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+/* Cart Total Section */
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #dee2e6;
+}
+
+    .cart-total h4 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #28a745;
+    }
+
+    .cart-total button {
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .cart-total button:hover {
+            background-color: #218838;
+        }
+
+/* Filter Section Styling */
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .filter-section .card {
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .filter-section select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-top: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Adjust Card Width and Spacing */
+.dlWatchesByCategory .card {
+    padding: 15px;
+    margin: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+    .dlWatchesByCategory .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .dlWatchesByCategory .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+.dlWatchesByCategory .card-body {
+    text-align: center;
+}
+
+.dlWatchesByCategory .card-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.dlWatchesByCategory .card-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.dlWatchesByCategory .btn {
+    padding: 8px 20px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+}
+
+    .dlWatchesByCategory .btn:hover {
+        background-color: #0069d9;
+        transform: translateY(-2px);
+    }
+
+.container-fluid .row .col-md-12 {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .filter-section .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .filter-section select {
+        width: 100%;
+    }
+}
